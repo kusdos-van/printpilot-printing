@@ -16,7 +16,7 @@ try:
 except ImportError:
     Image = None
 
-PAGE_ID = os.getenv("PAGE_ID", "61595456493475")
+PAGE_ID = os.getenv("PAGE_ID", "1451052998080594")
 PAGE_TOKEN = os.getenv("PAGE_ACCESS_TOKEN", "")
 META_SECRET = os.getenv("META_APP_SECRET", "")
 VERIFY_TOKEN = os.getenv("META_VERIFY_TOKEN", "")
