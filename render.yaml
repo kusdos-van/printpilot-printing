@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: printpilot-printing-61595456493475
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 60
+    healthCheckPath: /health
+    envVars:
+      - key: PAGE_ID
+        value: "61595456493475"
+      - key: ADMIN_USERNAME
+        value: owner
+      - key: GRAPH_API_VERSION
+        value: v24.0
+      - key: DATA_DIR
+        value: /tmp/printpilot
