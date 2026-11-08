@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: printpilot-printing-61595456493475
+    name: printpilot-printing-1451052998080594
     runtime: python
     plan: free
     region: singapore
@@ -9,7 +9,7 @@ services:
     healthCheckPath: /health
     envVars:
       - key: PAGE_ID
-        value: "61595456493475"
+        value: "1451052998080594"
       - key: ADMIN_USERNAME
         value: owner
       - key: GRAPH_API_VERSION
